@@ -266,6 +266,8 @@ label {
     letter-spacing: 20px;
     background: #181818;
     transition: all 0.5s;
+    border-top: 1px solid #08fdd8;
+    border-bottom: 1px solid #08fdd8;
 }
 
 #taggle {
@@ -1155,7 +1157,7 @@ only screen and (max-height: 500px) {
 .image-grid {
     height: auto;
     display: flexbox;
-    max-width: 900px;
+    max-width: 1000px;
     color: white;
 }
 
