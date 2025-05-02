@@ -253,7 +253,7 @@ label {
 }
 
 .ca {
-    color: #a5a5a5;
+    color: #60e688;
 }
 
 .responsivemenu {
@@ -556,12 +556,18 @@ only screen and (max-height: 500px) {
 }
 
 .hsde {
-    margin-top: 20px;
+    margin-top: 15px !important;
     font-family: "LaBelle";
     color: dimgray;
     font-size: 17px;
-    padding-top: 30px;
+    padding-top: 20px;
     animation: fadein 2s;
+}
+@font-face {
+  font-family: 'Flaticon';
+  src: url('flaticon.woff2') format('woff2'),
+       url('flaticon.woff') format('woff');
+  font-display: swap;
 }
 
 @media only screen and (max-width: 960px) {
@@ -1287,4 +1293,83 @@ only screen and (max-height: 500px) {
 
 .workdetails {
     display: none;
+}
+
+/* Default (Desktop): Show image before text */
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+/* Mobile: Stack vertically with video below text */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .uservideo {
+        order: 2; /* ensure it goes after text */
+    }
+
+    .detail {
+        order: 1;
+    }
+
+    .uservideo img {
+        width: 100%; /* responsive image on mobile */
+        height: auto;
+    }
+}
+
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    fill: #08fdd8; /* Customize this color as needed */
+    font-size: 20px;
+}
+
+.glow-blink-text {
+    font-family: sans-serif;
+    color: #08fdd8;
+    font-weight: lighter;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin: 15px 0 30px;
+    display: block;
+    animation: glowBlink 2s ease-in-out infinite;
+}
+
+@keyframes glowBlink {
+    0%, 100% {
+        text-shadow: 0 0 5px #08fdd8, 0 0 10px #08fdd8, 0 0 15px #08fdd8;
+        opacity: 1; /* fully visible */
+    }
+    40% {
+        text-shadow: none;
+        opacity: 0; /* invisible at 40% of the animation */
+    }
+    60% {
+        text-shadow: 0 0 5px #08fdd8, 0 0 10px #08fdd8, 0 0 15px #08fdd8;
+        opacity: 1; /* fully visible again */
+    }
 }

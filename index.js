@@ -17,7 +17,7 @@ let ab = document.getElementById("ab");
 let sb = document.getElementById("sb");
 let wb = document.getElementById("wb");
 let cb = document.getElementById("cb");
-let cmb = document.getElementById("cmb");
+// let cmb = document.getElementById("cmb");
 let hb2 = document.getElementById("hb2");
 let ab2 = document.getElementById("ab2");
 let sb2 = document.getElementById("sb2");
@@ -26,15 +26,15 @@ let cb2 = document.getElementById("cb2");
 
 
 
-cmb.onclick = function() {
-    cd.style.display = "block";
-    if (cd.style.display == "block") {
-        hd.style.display = "none";
-        ad.style.display = "none";
-        wd.style.display = "none";
-        sd.style.display = "none";
-    }
-}
+// cmb.onclick = function() {
+//     cd.style.display = "block";
+//     if (cd.style.display == "block") {
+//         hd.style.display = "none";
+//         ad.style.display = "none";
+//         wd.style.display = "none";
+//         sd.style.display = "none";
+//     }
+// }
 
 hb.onclick = function() {
     hd.style.display = "block";
