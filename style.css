@@ -528,6 +528,25 @@ only screen and (max-height: 500px) {
     border-color: #08fdd8;
 }
 
+.contactme2 {
+    font-size: 15px;
+    color: #000;
+    border: 1.5px solid;
+    word-spacing: 3px;
+    letter-spacing: 3px;
+    padding: 15px;
+    font-weight: 600;
+    font-family: sans-serif;
+    cursor: pointer;    
+    background-color: #08fdd8;
+}
+
+.contactme2:hover {
+    color: black;
+    background-color: #08fdd8;
+    border-color: #08fdd8;
+}
+
 .hsds {
     padding-bottom: 30px;
     font-family: "LaBelle";
